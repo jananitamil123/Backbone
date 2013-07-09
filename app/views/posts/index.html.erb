@@ -1,0 +1,13 @@
+<div id="posts">
+
+</div>
+
+<script type="text/javascript" id="post_template">
+  $(function() {
+    // window.App = new BackboneSample();
+    //     Backbone.history.start({});
+  	// new window.BackboneSample();
+    window.router = new BackboneSample.Routers.PostsRouter({posts: <%= @posts.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>
