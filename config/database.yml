@@ -23,9 +23,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql2
-  username: root
-  password: root
+  adapter: postgresql
+  username: postgres
+  password: 
   database: backbone_pro
   pool: 5
   timeout: 5000
